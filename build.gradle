@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.2' // shadow 플러그인 추가
+}
+
+group = 'com.mybot'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.java.dev.jna:jna:5.10.0'
+    implementation 'net.java.dev.jna:jna-platform:5.10.0'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+application {
+    mainClass = 'com.mybot.GTASuspendGUI'
+}
+
+shadowJar {
+    archiveFileName = "gta-suspend-all.jar" // 패키징할 JAR 이름 설정
+    mergeServiceFiles()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.mybot.GTASuspendGUI'
+        )
+    }
+}
