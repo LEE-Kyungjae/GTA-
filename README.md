@@ -1,6 +1,17 @@
-# GTA5 무한로딩 해제 프로그램
-GTA5 랜선뽑기 프로그램이라고 흔히불리는 프로그램과 작동방식이 같습니다.
+The GTA5 Suspend Tool is designed to resolve the infinite loading issue that can occur in Grand Theft Auto V by temporarily suspending and resuming the game's process. The tool works similarly to what is commonly referred to as the "LAN cable unplugging trick" for bypassing the loading screen, but instead of disconnecting your network, it targets the gta5.exe process.
 
-gta5.exe의프로세서를 찾아 일시정지후 해제를 시켜
-
-무한로딩을 해제하는 프로그램 입니다
+How the Program Works:
+The tool identifies the gta5.exe process and pauses it.
+After a short delay, it resumes the process, allowing the game to bypass the infinite loading state.
+This is particularly useful when the game gets stuck during online sessions or when loading into the game world.
+Features:
+Automatically finds the GTA5 process without manual intervention.
+Simple pause-and-resume mechanism for resolving loading screen issues.
+How to Use:
+Launch GTA5 and wait until you encounter a loading screen that seems to take too long.
+Run the GTA5 Suspend Tool.
+The program will suspend and resume the process to help you bypass the loading problem.
+Requirements:
+Java Runtime Environment must be installed to run the program.
+A running instance of GTA5.
+For more detailed instructions and to access the source code, visit the GTA5 Suspend Tool GitHub repository.
